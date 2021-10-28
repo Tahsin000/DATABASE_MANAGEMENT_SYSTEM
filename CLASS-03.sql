@@ -52,6 +52,49 @@ from EMPLOYEES
 where first_name=initcap(:input);
 
 -- CHAPTER 3 : Relation algebra
+-- SELECT -> PI -> pi is the projection operator -> (Example){ PI (EMPLOYEE_ID, first_name, last_name, job_id) }
+-- WHERE -> sigma -> (Example){ CONDITION -> sigma(first_name='Steven') }
+-- FROM -> (EMPLOYEES) -> (Example){ from EMPLOYEES }
 
+-- Example of Relation algebra
+select EMPLOYEE_ID, first_name, last_name, job_id
+from EMPLOYEES
+where first_name='Steven';
+-- PI EMPLOYEE_ID, first_name, last_name, job_id (sigmafirst_name='Steven'(EMPLOYEES))
 
+-- Question - https://i.ibb.co/QDhKJCm/image.png
+select *
+from loan
+where branch_name='Perryridge';
+
+-- Question - https://i.ibb.co/84NvBrJ/image.png
+select *
+from loan
+where amount > 1200;
+
+-- Question - https://i.ibb.co/QKMq74M/image.png
+select loan_number, amount
+from loan
+
+-- Question - https://i.ibb.co/vZqBcsF/image.png
+select customer_name
+from customer
+where customer_city = 'Harrison'
+
+-- Character manipulation
+-- 1. LPAD
+    select EMPLOYEE_ID, first_name, last_name, job_id, LPAD(salary, 6, '*')
+    from employees
+
+-- 2. RPAD
+    select EMPLOYEE_ID, first_name, last_name, job_id, RPAD(salary, 6, '*')
+    from employees
+
+-- 3. SUBSTR
+    select EMPLOYEE_ID, first_name, last_name, job_id
+    from employees
+    where substr(job_id, 4) = 'REP';
+
+-- 4. INSTR
+-- 5. LENGTH
 

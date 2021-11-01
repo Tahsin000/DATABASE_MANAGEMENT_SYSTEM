@@ -18,3 +18,22 @@
 		select FEE
 		from DOCTOR natural join TREATMENT 
 		where D_ID = 102 and T_DATA = '10-JAN-21'
+
+-- PL-SQL
+-- TEST _ 01
+DECLARE
+BEGIN
+	dbms_output.put_line('IIUC_CSE');
+END;
+
+-- TEST _ 02
+
+DECLARE
+a integer(10):=15;
+b number(10,2):=25.6;
+c float;
+
+BEGIN 
+	c:= a + b;
+	dbms_output.put_line('The result of addition is : ' || c); 
+END;

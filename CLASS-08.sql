@@ -51,3 +51,16 @@ BEGIN
 	dbms_output.put_line('WELCOME TO ' || pnt);
 	dbms_output.put_line('The result of addition is : ' || c); 
 END;
+
+-- TASK _ 04 { Double precision }
+
+DECLARE
+d double precision;
+a integer(10):=15;
+b number(10, 2):=25.6;
+c float;
+BEGIN 
+	c:= a + b;
+	d:= a / c;
+	dbms_output.put_line('Double precision ' || d); 
+END;

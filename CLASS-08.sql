@@ -37,3 +37,17 @@ BEGIN
 	c:= a + b;
 	dbms_output.put_line('The result of addition is : ' || c); 
 END;
+
+-- TASK _ 03 { user input  }
+
+DECLARE
+a integer(10):=15;
+b number(10,2):=25.6;
+c float;
+pnt varchar(20);
+BEGIN 
+	pnt:=:input;
+	c:= a + b;
+	dbms_output.put_line('WELCOME TO ' || pnt);
+	dbms_output.put_line('The result of addition is : ' || c); 
+END;

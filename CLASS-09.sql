@@ -20,6 +20,18 @@ END if;
 END;
 
 -- Task - 03
+DECLARE
+   x integer(10):=:input;
+
+BEGIN
+    IF (x mod 2)=0 THEN
+        dbms_output.put_line(x || ' is EVEN');
+    ELSE
+        dbms_output.put_line(x || ' is ODD'); 
+  END IF;
+END;
+
+-- Task - 04
 DECLARE 
     id varchar(20):='C193066';
     pin varchar(20):='123';

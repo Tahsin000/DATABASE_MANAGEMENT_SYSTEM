@@ -12,6 +12,10 @@ INDEX
 6. inserted data sample
 7. SQL(MNL)
 
+
+IMAGE SOURCE FILE:  https://ibb.co/PFH7WH1
+                    https://ibb.co/WzhD9bt  
+                    https://ibb.co/qsxwVwG
 */
 
 /* 

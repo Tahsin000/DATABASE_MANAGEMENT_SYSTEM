@@ -13,9 +13,9 @@ INDEX
 7. SQL(MNL)
 
 
-IMAGE SOURCE FILE:  https://ibb.co/PFH7WH1
-                    https://ibb.co/WzhD9bt  
-                    https://ibb.co/qsxwVwG
+IMAGE SOURCE FILE:  https://i.ibb.co/wBm9Qmp/unnamed-2.jpg
+                    https://i.ibb.co/xgkmvpH/unnamed.jpg
+                    https://i.ibb.co/YkbGwG9/unnamed-1.jpg
 */
 
 /* 

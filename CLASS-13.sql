@@ -39,9 +39,8 @@ BEGIN
     ELSIF(instr(msg1,'Islamic'))>0 THEN
         DBMS_OUTPUT.PUT_LINE('Found LINE_02'); 
     ELSE    
-        DBMS_OUTPUT.PUT_LINE('NOT Found'); 
-     
-END IF;
+        DBMS_OUTPUT.PUT_LINE('NOT Found');  
+    END IF;
 END;
 
 /* --TASK - 05
@@ -49,20 +48,20 @@ ____________________________________________________________________
  */
 
 DECLARE 
-  cnt NUMBER;
-  CURSOR cur_emp IS
-  SELECT *
-  FROM EMPLOYEES
-  WHERE SALARY > 5000;
-  v_emp_rec EMPLOYEES%ROWTYPE;
+    cnt NUMBER;
+    CURSOR cur_emp IS
+    SELECT *
+    FROM EMPLOYEES
+    WHERE SALARY > 5000;
+    v_emp_rec EMPLOYEES%ROWTYPE;
 BEGIN
-  cnt:= 0;
-  OPEN cur_emp;
-  LOOP
-    fetch cur_emp into v_emp_rec;
-    cnt:= cnt + 1;
-    EXIT when CUR_emp%notfound;
-    DBMS_OUTPUT.PUT_LINE(cnt || '. NAME : '|| v_emp_rec.FIRST_NAME|| ' ' || v_emp_rec.LAST_NAME);
-  END LOOP;
-  close cur_emp;
+    cnt:= 0;
+    OPEN cur_emp;
+        LOOP
+            fetch cur_emp into v_emp_rec;
+            cnt:= cnt + 1;
+            EXIT when CUR_emp%notfound;
+            DBMS_OUTPUT.PUT_LINE(cnt || '. NAME : '|| v_emp_rec.FIRST_NAME|| ' ' || v_emp_rec.LAST_NAME);
+        END LOOP;
+    close cur_emp;
 END;

@@ -1,3 +1,7 @@
+/* 
+    DATE : 28.10.2021
+ */
+
 -- Number function
 -- 	1. round
     select round (45.25,-1)

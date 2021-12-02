@@ -1,3 +1,6 @@
+/* 
+    DATE : 21.10.2021
+ */
 -- // Problem_01
 Select * 
 from EMPLOYEES

@@ -1,3 +1,6 @@
+/* 
+    DATE : 28.10.2021
+ */
 -- find employees having "IT" in their job id and "A their name;
 select first_name, last_name, job_id
 from EMPLOYEES

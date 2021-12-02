@@ -1,3 +1,6 @@
+/* 
+    DATE : 02.11.2021
+ */
     -- • Find the patient details who have seen the same doctor as ‘X’
         -- ◦ Ans : 
 		select *

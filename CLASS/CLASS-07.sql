@@ -1,3 +1,6 @@
+/* 
+    DATE : 22.10.2021
+ */
 -- Test-01
 Select * 
 from DOCTOR
